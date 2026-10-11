@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oathbound — Privacy Policy</title><meta name="description" content="Oathbound — Privacy Policy">
+<style>
+:root{--bg:#f6f4ef;--fg:#1d1b18;--muted:#5f5a51;--rule:#d8d2c6;--accent:#8a6a2c;--card:#fffdf8;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--fg:#ece7dc;--muted:#a9a295;--rule:#34302a;--accent:#d2ab5c;--card:#1c1a17;color-scheme:dark}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:40px 18px 64px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:28px}
+.brand{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;letter-spacing:.18em;text-transform:uppercase;font-size:15px;color:var(--fg);text-decoration:none}
+nav{display:flex;gap:16px;font-size:14px}nav a{color:var(--muted);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-weight:600;font-size:32px;line-height:1.2;margin:0 0 8px;text-wrap:balance}
+h2{font-size:19px;margin:34px 0 8px}
+a{color:var(--accent)}p,li{max-width:68ch}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0}
+.tbl{overflow-x:auto}th,td{border-bottom:1px solid var(--rule);text-align:left;vertical-align:top;padding:8px 10px 8px 0}th{color:var(--muted);font-weight:600}
+footer{margin-top:48px;border-top:1px solid var(--rule);padding-top:14px;font-size:13px;color:var(--muted)}
+.lead{font-size:18px;color:var(--muted)}
+.links{display:grid;gap:10px;margin-top:24px}.links a{display:block;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.links span{display:block;color:var(--muted);font-size:14px}
+</style></head>
+<body><div class="wrap"><header><a class="brand" href="./">Oathbound</a><nav><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></nav></header>
+<main><h1>Oathbound Privacy Policy</h1>
+<p>Effective date: October 11, 2026</p>
+<p>Oathbound is made by Can İlbey Sezgin ("the developer"), İstanbul, Türkiye. Contact: <a href="mailto:oathboundgymapp@gmail.com">oathboundgymapp@gmail.com</a></p>
+<h2>The short version</h2>
+<ul>
+<li>Oathbound has no account, no sign-in and no server of its own.</li>
+<li>Your training record stays on your iPhone and, if iCloud is on, in your own private iCloud. The developer cannot see it.</li>
+<li>The app uses a random identifier that is not your name, email or Apple ID. Usage events, masked screen recordings and crash reports are linked to that identifier. You can turn them off in Settings at any time.</li>
+<li>Firebase works out an approximate location from your IP address. The app never asks for your precise location.</li>
+<li>Purchases are made through Apple and checked by RevenueCat.</li>
+<li>Apple Health is optional, and the app only writes to it.</li>
+<li>There is no advertising, no tracking across other companies’ apps or websites, and no sale of data.</li>
+</ul>
+<h2>Your training record</h2>
+<p>Your sessions, sets, weights, reps, notes, saved sessions, marks, chapters and settings are stored on your iPhone. If iCloud is enabled for Oathbound, they are also kept in your private iCloud database (Apple CloudKit), so they sync across your own devices. Only you can reach that database through your Apple Account; the developer has no access to it. Apple’s privacy policy applies to iCloud: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
+<h2>The random identifier</h2>
+<p>On first open, Oathbound creates a random identifier on your device and keeps it in the device’s keychain. It can stay after the app is deleted and reinstalled.</p>
+<p>The same identifier is used:
+- with PostHog, for usage analytics and screen recordings;
+- with RevenueCat, for purchases;
+- with Firebase Crashlytics, for crash reports;
+- as the <strong>Support ID</strong> shown at the bottom of Settings.</p>
+<p>It identifies this install of the app, not you as a person. It is never combined with your name, email address or Apple Account.</p>
+<h2>Usage analytics and screen recordings (PostHog)</h2>
+<p>To understand how the app is used — for example, whether people finish onboarding or open a chapter — Oathbound sends usage events to PostHog, an analytics provider.</p>
+<p><strong>What an event carries:</strong>
+- the random identifier;
+- the app version, the iOS version, your language and region settings;
+- whether a subscription or trial is active, and how many days since install;
+- the event’s name and a few fixed properties, such as which screen or which path.</p>
+<p>Events do not contain your name, email, contacts, photos, free text you typed, weights, or movement names. PostHog receives the IP address of each request, but Oathbound’s PostHog project is set to discard it, so IP addresses are not stored with events.</p>
+<p><strong>Screen recordings (session replay).</strong> While you use the app, Oathbound also sends PostHog low-frame-rate recordings of its own screens, so that confusing screens can be found and fixed.
+- Text you type and images are masked in these recordings. The About you screen is masked whole.
+- Other text on the screen is not masked. Recordings can show what is on screen, including weights, reps, set counts and movement names from your record.
+- Nothing is recorded while the app is in the background, and no network traffic is recorded.</p>
+<p>Events and recordings are linked to the random identifier. They are not used for advertising and are not shared for tracking. PostHog stores them in the United States. Events are kept for one year, and screen recordings for up to 30 days. PostHog’s privacy policy: <a href="https://posthog.com/privacy">https://posthog.com/privacy</a></p>
+<p><strong>Turning it off:</strong> Settings › You › Share usage data. When it is off, no events and no screen recordings are sent, and Firebase Analytics, Crashlytics and Performance (below) stop collecting too. The change applies from the next event.</p>
+<h2>Firebase (Google)</h2>
+<p>Oathbound uses these Google Firebase services:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Service</th>
+<th>What it collects</th>
+<th>Why</th>
+<th>Affected by the setting?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Firebase Analytics</td>
+<td>usage events (including screen views, sessions and in-app purchase events with product and price), an app instance identifier, and an approximate location that Google derives from a masked IP address</td>
+<td>analytics</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Firebase Crashlytics</td>
+<td>crash reports (stack trace and app state at the crash, device and iOS information) linked to the random identifier</td>
+<td>fixing crashes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Firebase Performance Monitoring</td>
+<td>timing data (such as app start time and network response times), CPU and memory use, device and iOS information, and the IP address, used to group performance by approximate region</td>
+<td>performance</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Firebase Remote Config and Installations</td>
+<td>a Firebase installation identifier, country, language, time zone and iOS version, used to deliver app settings</td>
+<td>app functionality</td>
+<td>no — the app needs these settings to work</td>
+</tr>
+<tr>
+<td>Firebase Cloud Messaging</td>
+<td>your device’s push token and a Firebase installation identifier, with device model, language, time zone and iOS version, so the app can receive notifications</td>
+<td>app functionality</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Approximate location.</strong> Firebase Analytics derives an approximate location from a masked IP address, and Performance Monitoring uses the IP address to group results by region. Neither reads your device’s location, and Oathbound never asks for location permission.</p>
+<p>Firebase In-App Messaging is included in the app but shows no messages, so it has no interactions to record.</p>
+<p>The app instance identifier is also passed to RevenueCat, so that purchases and analytics refer to the same install.</p>
+<p>Firebase may process and store data wherever Google or its agents keep facilities. Google’s privacy information for Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h2>Purchases (Apple and RevenueCat)</h2>
+<p>Subscriptions are sold by Apple through the App Store. Apple handles payment; the developer never sees your payment details.</p>
+<p>Oathbound uses RevenueCat to check whether a subscription or trial is active. RevenueCat receives purchase information from Apple — the product, dates, prices and transaction status — together with the random identifier. Together these form your purchase history in RevenueCat. Purchase records are needed to provide the subscription and are not affected by the analytics setting.</p>
+<p>RevenueCat’s privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<h2>No advertising identifier, no tracking</h2>
+<p>Oathbound does not read your device’s advertising identifier (IDFA), does not ask for tracking permission, and does not track you across other companies’ apps or websites. An attribution tool (AppsFlyer) is built into the app but is switched off in this version and collects nothing. If that changes, this policy will be updated first.</p>
+<h2>Apple Health</h2>
+<p>If you turn on Apple Health in Settings, Oathbound saves each sealed session to Apple Health as a strength training workout. Oathbound never reads data from Apple Health. Health data stays on your device and in Apple Health. It is not sent to the developer or to any of the services above, and it is never used for analytics or advertising.</p>
+<h2>Notifications</h2>
+<p>Most notifications are scheduled on your device: rest over, week closing, a new chapter, echoes, training-day reminders and a trial reminder. Their content is not sent to a server. The push token mentioned above lets the app receive notifications sent through Firebase Cloud Messaging. Each kind can be turned off in Settings › Notifications.</p>
+<h2>Import and export</h2>
+<p>When you import a Strong or Hevy file, it is read on your device and is not uploaded. Exports (CSV and JSON) are created on your device and go only where you send them.</p>
+<h2>How long data is kept</h2>
+<ul>
+<li><strong>Your training record:</strong> until you delete it.</li>
+<li><strong>PostHog:</strong> events for one year; screen recordings for up to 30 days.</li>
+<li><strong>Firebase Crashlytics:</strong> crash data for 90 days.</li>
+<li><strong>Firebase Performance Monitoring:</strong> events tied to an IP address for 30 days; other performance data for 60 days.</li>
+<li><strong>Firebase installation identifiers</strong> (Remote Config, Cloud Messaging): until deleted, then removed from Google’s systems within 180 days.</li>
+<li><strong>Firebase Analytics:</strong> user-level and event-level data for 2 months (the Google Analytics data retention setting). Google Analytics’ standard aggregated reports are not affected by this setting.</li>
+<li><strong>RevenueCat purchase records:</strong> as long as needed to provide the subscription and as required by law.</li>
+</ul>
+<h2>Deleting your data</h2>
+<ul>
+<li><strong>Your record:</strong> Settings › Your record › Delete everything removes it from this iPhone and from your iCloud. Deleting the app removes the data stored on the device.</li>
+<li><strong>Data linked to the random identifier</strong> (analytics, recordings, crash reports, purchase records): write to <a href="mailto:oathboundgymapp@gmail.com">oathboundgymapp@gmail.com</a> with the Support ID from the bottom of Settings. It will be deleted within 30 days, except purchase records the law requires to be kept.</li>
+</ul>
+<h2>Where data is processed</h2>
+<p>The developer is in Türkiye. PostHog, Firebase and RevenueCat process data outside Türkiye, including in the United States.</p>
+<h2>Your rights</h2>
+<p>Under Türkiye’s Personal Data Protection Law No. 6698 (KVKK) and, where it applies, the EU General Data Protection Regulation (GDPR), you can:
+- learn whether data linked to your Support ID is processed, and get a copy;
+- have it corrected or deleted;
+- object to its processing, or ask to restrict it;
+- complain to the Personal Data Protection Authority of Türkiye (KVKK), or to the data protection authority where you live in the EU.</p>
+<p>To use these rights, write to <a href="mailto:oathboundgymapp@gmail.com">oathboundgymapp@gmail.com</a> with your Support ID. Requests are answered within 30 days.</p>
+<h2>Children</h2>
+<p>Oathbound is not directed at children under 13 and does not knowingly collect personal information from them.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+<h2>Contact</h2>
+<p><a href="mailto:oathboundgymapp@gmail.com">oathboundgymapp@gmail.com</a></p></main>
+<footer>Oathbound · Can İlbey Sezgin, İstanbul, Türkiye · <a href="mailto:oathboundgymapp@gmail.com">oathboundgymapp@gmail.com</a></footer></div></body></html>
